@@ -1,0 +1,23 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div class="card">
+        <h1 class="fs-1 text-center">Stupid Coaching</h1>
+        <div class="bg-secondary bg-opacity-50 my-3">
+          <p class="fs-3"><%= params[:question] %></p>
+          <p class="fst-italic">-You</p>
+        </div>
+
+        <div class="bg-warning bg-opacity-50 mb-3">
+          <p class="fs-3"><%= @answer %></p>
+          <p class="fst-italic">- Your Coach</p>
+        </div>
+
+        <button type="button" class="btn btn-primary"><%= link_to "Ask a new question", ask_path %></button>
+      </div>
+    </div>
+  </body>
+<html>
